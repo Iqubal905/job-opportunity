@@ -1,19 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import myImg from '../assets/images/img.png'
 const Header = () => {
-    return (
-        <div className='flex justify-between p-8  bg-slate-200'>
-            <h2 className='text-2xl font-bold'>Job Opportunity</h2>
-            <div className='text-lg font-semibold'>
-                <Link className='m-2 p-2' to='/'>Home</Link>
-                <Link className='m-2 p-2' to='/statistics'>Statistics</Link>
-                <Link className='m-2 p-2' to='/blog'>Blog</Link>
-                <Link className='m-2 p-2' to='/appliedJobs'>Applied Jobs</Link>
-            </div>
-            <button className=' text-white bg-sky-500 rounded-md p-2'>Start Applying</button>
-        </div>
-    );
+  return (
+    <div>
+      <div className="flex justify-between p-10  bg-slate-200">
+              <div className=' text-left'>
+                <h2 className=' text-6xl p-2'> One Step <br /> Closer To Your  <br /><span className='text-sky-500'>Dream Job</span></h2>
+                <p className=' p-2 mr-64'>Explore thousands of job opportunities with all the information you need. 
+                Its your future. Come find it. Manage all your job application from start to finish</p>
+                <button className=' text-white bg-sky-500 rounded-md p-2 mt-3'>Get Started</button>
+              </div>
+              <div>
+                <img src={myImg} alt="" />
+                
+              </div>
+
+           </div>
+    </div>
+  );
 };
 
 export default Header;

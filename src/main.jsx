@@ -7,9 +7,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ErrorPage from './computent/ErrorPage';
-import Home from './computent/Home';
+
 import Blog from './computent/Blog';
 import Statistics from './computent/Statistics';
+
+import Homes from './computent/Homes';
 
 
 
@@ -21,7 +23,7 @@ const router = createBrowserRouter([
    children: [
     {
       path: '/',
-      element:<Home />
+      element: <Homes />
     },
     {
       path: '/Blog',

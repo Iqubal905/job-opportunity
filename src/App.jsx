@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css'
-import Header from './computent/Header';
+import Navigation from './computent/Navigation';
 import { Outlet } from 'react-router-dom';
 const App = () => {
+
+
   return (
     <div>
-      <Header />
+      <Navigation />
       <Outlet />
     </div>
   );
