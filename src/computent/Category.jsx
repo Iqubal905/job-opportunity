@@ -2,7 +2,7 @@ import React from 'react';
 
 const Category = ({job}) => {
     const {img, category, number_job} = job
-    console.log(job);
+    
     return (
         <div className=' text-left bg-gray-200 p-6'>
            

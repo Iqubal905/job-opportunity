@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "title": "Men's Sneaker",
+        "subTitle": "ULTRABOOST 22 SHOES",
+        "address": "Sylhet, Bangladesh",
+        "salary": 420,
+        "logo": "../src/assets/Logo/google-1-1 1-1.png",
+        "icon_location": "../src/assets/Icons/Frame.png",
+        "icon_salary": "../src/assets/Icons/Frame-4.png"
+       
+    },
+    {
+        "id": "3",
+        "title": "Men's Sneaker",
+        "subTitle": "ULTRABOOST 22 SHOES",
+        "address": "Sylhet, Bangladesh",
+        "salary": 420,
+        "logo": "../src/assets/Logo/google-1-1 1-1.png",
+        "icon_location": "../src/assets/Icons/Frame.png",
+        "icon_salary": "../src/assets/Icons/Frame-4.png"
+       
+    },
+    {
+        "id": "3",
+        "title": "Men's Sneaker",
+        "subTitle": "ULTRABOOST 22 SHOES",
+        "address": "Sylhet, Bangladesh",
+        "salary": 420,
+        "logo": "../src/assets/Logo/google-1-1 1-1.png",
+        "icon_location": "../src/assets/Icons/Frame.png",
+        "icon_salary": "../src/assets/Icons/Frame-4.png"
+       
+    },
+    {
+        "id": "4",
+        "title": "Men's Sneaker",
+        "subTitle": "ULTRABOOST 22 SHOES",
+        "address": "Sylhet, Bangladesh",
+        "salary": 420,
+        "logo": "../src/assets/Logo/google-1-1 1-1.png",
+        "icon_location": "../src/assets/Icons/Frame.png",
+        "icon_salary": "../src/assets/Icons/Frame-4.png"
+       
+    }
+]
