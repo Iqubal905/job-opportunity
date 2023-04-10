@@ -43,6 +43,7 @@ jobs.map(job => <Category
     <div className=' grid grid-cols-2 gap-16'>    
     {
 features.map(feature => <Featured
+     key={feature.id}
     feature={feature}
 ></Featured>)
      }

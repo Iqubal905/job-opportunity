@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import JobDetails from './JobDetails';
+
 
 const Featured = ({feature}) => {
     const {id, logo, icon_location, icon_salary, title, subTitle, salary, address} = feature
-
-   
+  
     
     return (
         <div className=' text-left box-content  pb-4 pl-8 pr-4 pt-4 border-2 '>
@@ -28,11 +27,7 @@ const Featured = ({feature}) => {
             </div>
            
            <button className=' text-white bg-sky-500 rounded-md p-2 mt-3'> <Link className='m-2 p-2' to={`/job/${id}`}>Job Details</Link></button>
-       {
-        <JobDetails
-        feature={feature}
-        ></JobDetails>
-       }
+      
        
         </div>
     );
