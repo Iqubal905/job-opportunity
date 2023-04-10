@@ -6,7 +6,21 @@ import Featured from './Featured';
 
 const Homes = () => {
 
-    const features = useLoaderData([])
+     const features = useLoaderData([])
+
+
+
+//  const [features, setFeature] = useState([])
+ 
+// // useEffect(()=>{
+
+// //     fetch('jobFeatured.json')
+// //  .then(res => res.json())
+// //  .then(data => setFeature(data))
+// //   console.log(features);
+// // },[])
+
+
 
     const[jobs, setJobs] = useState([])
 
@@ -15,7 +29,20 @@ const Homes = () => {
  fetch('jobcategory.json')
  .then(res => res.json())
  .then(data =>setJobs(data))
+
     },[])
+
+
+
+ let test =features.slice(0, 4)
+ const [slice, setSlice] = useState(test)
+
+const handlerShowAll = () =>{
+    setSlice(features)
+ }
+
+ console.log(slice);
+
     return (
         <div>
    <Header />
@@ -41,16 +68,18 @@ jobs.map(job => <Category
     <p className='p-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 </div>
     <div className=' grid grid-cols-2 gap-16'>    
-    {
-features.map(feature => <Featured
+
+    {Array.isArray(slice) ?
+     slice.map(feature => <Featured
      key={feature.id}
     feature={feature}
-></Featured>)
+></Featured>):
+ null
      }
     </div>
 
    </div>
-   <button className=' text-white bg-sky-500 rounded-md p-2  my-6'>See all Jobs</button>
+   <button onClick={()=>handlerShowAll()} className=' text-white bg-sky-500 rounded-md p-2  my-6'>See all Jobs</button>
           
         </div>
     );

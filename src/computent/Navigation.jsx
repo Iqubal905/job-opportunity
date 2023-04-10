@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <div className='flex justify-between p-8  bg-slate-200'>
+        <div className='flex justify-between p-8  bg-slate-100  '>
             <h2 className='text-2xl font-bold'>Job Opportunity</h2>
             <div className='text-lg font-semibold'>
                 <Link className='m-2 p-2' to='/'>Home</Link>

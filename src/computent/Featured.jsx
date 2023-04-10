@@ -3,14 +3,14 @@ import { Link, useParams } from 'react-router-dom';
 
 
 const Featured = ({feature}) => {
-    const {id, logo, icon_location, icon_salary, title, subTitle, salary, address} = feature
+    const {id, logo, icon_location, icon_salary, title, companyName, salary, address} = feature
   
     
     return (
         <div className=' text-left box-content  pb-4 pl-8 pr-4 pt-4 border-2 '>
             <img className='p-2' src={logo} alt="" />
             <h2 className=' font-bold  text-2xl py-2'>{title}</h2>
-            <p className=' text-sm  text-gray-500'>{subTitle}</p>
+            <p className=' text-sm  text-gray-500'>{companyName}</p>
             <div className='flex '>
                 <button className= ' border-solid border-2 border-zinc-300 p-1 mt-2 mr-2 text-sky-500' >Remote</button>
                 <button className='border-solid border-2 border-zinc-300 p-1 mt-2 mr-2 text-sky-500'>Full Time</button>
