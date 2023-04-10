@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import bgImg from '../assets/images/Vector-1.png'
 import bgImg2 from '../assets/images/Vector.png'
+import { addToDb, deleteShoppingCart, getShoppingCart } from '../fakeDb';
+
+
+
 const JobDetails = () => {
 
-     
-
-   const id = useParams()
+   const singleId = useParams()
  
 const allJobs = useLoaderData([])
 
@@ -15,12 +17,12 @@ const allJobs = useLoaderData([])
 const [singlejob, setSinglejob]  = useState([])
 
  useEffect(()=>{
-  const ele =  allJobs.find(job => job.id === id.jobId );
+  const ele =  allJobs.find(job => job.id === singleId.jobId );
   
     setSinglejob(ele)
  },[])
- const {title, address,salary,description, responsibility, education, experience, time, phone, email, icon_location, icon_salary} = singlejob
-
+ const {id, title, address,salary,description, responsibility, education, experience, time, phone, email, icon_location, icon_salary} = singlejob
+ 
 
     return (
         <div>
@@ -62,7 +64,7 @@ const [singlejob, setSinglejob]  = useState([])
               <span> <img src={icon_salary} alt="" /></span>
                 <p> <span  className=' font-semibold'>Address:</span>{address}</p>
             </div>
-            <button className='  w-full text-white bg-sky-500 rounded-md p-2 mt-3 text-center  mt-8'>Apply Now</button>
+            <button onClick={()=> addToDb(id)} className='  w-full text-white bg-sky-500 rounded-md p-2 text-center  mt-8'>Apply Now</button>
           </div>
          
         </div>
