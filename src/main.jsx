@@ -12,6 +12,7 @@ import Blog from './computent/Blog';
 import Statistics from './computent/Statistics';
 
 import Homes from './computent/Homes';
+import JobDetails from './computent/JobDetails';
 
 
 
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
     {
       path: '/Blog',
       element: <Blog />
+    },
+    {
+      path: '/job/:jobId',
+      element: <JobDetails />,
+      loader: ({params}) => fetch(`jobFeatured.json/${params.jobId}`)
     },
     {
       path: '/statistics',

@@ -6,7 +6,7 @@ import Featured from './Featured';
 
 const Homes = () => {
 
-    const features = useLoaderData()
+    const features = useLoaderData([])
 
     const[jobs, setJobs] = useState([])
 
@@ -36,7 +36,11 @@ jobs.map(job => <Category
     </div>
 
 
-    <div className='flex justify-between '>    
+<div className='p-4 mb-4 mt-16'>
+    <h2 className=' text-3xl font-bold'>Featured Jobs</h2>
+    <p className='p-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+</div>
+    <div className=' grid grid-cols-2 gap-16'>    
     {
 features.map(feature => <Featured
     feature={feature}
@@ -45,7 +49,7 @@ features.map(feature => <Featured
     </div>
 
    </div>
-
+   <button className=' text-white bg-sky-500 rounded-md p-2  my-6'>See all Jobs</button>
           
         </div>
     );
