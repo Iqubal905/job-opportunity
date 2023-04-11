@@ -15,7 +15,9 @@
         "email": "werdfe@gmail.com ",
         "logo": "./logo/google-1-1 1.png",
         "icon_location": "./Icons/Location Icon.png",
-        "icon_salary": "./Icons/Frame.png" 
+        "icon_salary": "./Icons/Frame.png" ,
+        "icon_phone": "./Icons/Frame-2.png" ,
+        "icon_email": "./Icons/Frame-3.png" 
        
     },
     {
@@ -34,7 +36,9 @@
         "email": "untaie@gmail.com ",
         "logo": "./logo/netflix-4 1.png",
         "icon_location": "./Icons/Frame-4.png",
-        "icon_salary": "./Icons/Frame.png" 
+        "icon_salary": "./Icons/Frame.png" ,
+        "icon_phone": "./Icons/Frame-2.png" ,
+        "icon_email": "./Icons/Frame-3.png" 
        
     },
     {
@@ -53,7 +57,9 @@
         "email": "design@gmail.com ",
         "logo": "./logo/tesla-9 1.png",
         "icon_location": "./Icons/Frame-4.png",
-        "icon_salary": "./Icons/Frame.png" 
+        "icon_salary": "./Icons/Frame.png" ,
+        "icon_phone": "./Icons/Frame-2.png" ,
+        "icon_email": "./Icons/Frame-3.png" 
        
     },
     {
@@ -72,7 +78,9 @@
         "email": "account@gmail.com ",
         "logo": "./logo/Group 10021.png",
         "icon_location": "./Icons/Frame-4.png",
-        "icon_salary": "./Icons/Frame.png" 
+        "icon_salary": "./Icons/Frame.png" ,
+        "icon_phone": "./Icons/Frame-2.png" ,
+        "icon_email": "./Icons/Frame-3.png" 
        
     },
     {
@@ -91,7 +99,9 @@
         "email": "kamjan@gmail.com ",
         "logo": "./logo/google-1-1 1.png",
         "icon_location": "./Icons/Frame-4.png",
-        "icon_salary": "./Icons/Frame.png" 
+        "icon_salary": "./Icons/Frame.png" ,
+        "icon_phone": "./Icons/Frame-2.png" ,
+        "icon_email": "./Icons/Frame-3.png" 
        
     },
     {
@@ -110,7 +120,9 @@
         "email": "manage@gmail.com ",
         "logo": "./logo/netflix-4 1.png",
         "icon_location": "./Icons/Frame-4.png",
-        "icon_salary": "./Icons/Frame.png" 
+        "icon_salary": "./Icons/Frame.png" ,
+        "icon_phone": "./Icons/Frame-2.png" ,
+        "icon_email": "./Icons/Frame-3.png" 
        
     }
 ]

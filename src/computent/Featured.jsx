@@ -22,7 +22,7 @@ const Featured = ({feature}) => {
              </div>
              <div className='flex'>
                 <img className=' pl-2 pr-1' src={icon_salary} alt="" />
-             <p className='text-sm text-gray-500'>{salary}</p>
+             <p className=''> Salary : <span className='text-sm text-gray-500'>{salary}</span></p>
              </div>
             </div>
            
