@@ -26,7 +26,7 @@ const [singlejob, setSinglejob]  = useState([])
   
     setSinglejob(ele)
  },[])
- const {id, title, address,salary,description, responsibility, education, experience, time, phone, email, icon_location, icon_salary} = singlejob
+ const {id, title, address,salary,description, responsibility, education, experience, time, location, phone, email, icon_location, icon_salary} = singlejob
  
 
     return (

@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 
 
 const Featured = ({feature}) => {
-    const {id, logo, icon_location, icon_salary, title, companyName, salary, address} = feature
+    const {id, logo, icon_location, time, location, icon_salary, title, companyName, salary, address} = feature
   
     
     return (
@@ -12,8 +12,8 @@ const Featured = ({feature}) => {
             <h2 className=' font-bold  text-2xl py-2'>{title}</h2>
             <p className=' text-sm  text-gray-500'>{companyName}</p>
             <div className='flex '>
-                <button className= ' border-solid border-2 border-zinc-300 p-1 mt-2 mr-2 text-sky-500' >Remote</button>
-                <button className='border-solid border-2 border-zinc-300 p-1 mt-2 mr-2 text-sky-500'>Full Time</button>
+                <button className= ' border-solid border-2 border-zinc-300 p-1 mt-2 mr-2 text-sky-500' >{location}</button>
+                <button className='border-solid border-2 border-zinc-300 p-1 mt-2 mr-2 text-sky-500'>{time}</button>
             </div>
             <div className='flex pt-3'>
              <div className='flex'>

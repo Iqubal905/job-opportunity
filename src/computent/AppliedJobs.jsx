@@ -28,6 +28,7 @@ console.log(storeJob);
     return (
         
         <div>
+            {storeJob.length ? 'Review applied jobs' : 'Please apply jobs empty!'}
            {
             storeJob.map(singleStore => <SaveJobs
             key={singleStore.id}
