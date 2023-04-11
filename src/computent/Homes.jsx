@@ -41,7 +41,7 @@ const handlerShowAll = () =>{
     setSlice(features)
  }
 
- console.log(slice);
+ 
 
     return (
         <div>
@@ -53,7 +53,14 @@ const handlerShowAll = () =>{
             <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
-    <div className='flex justify-between'>    
+    <div className='flex justify-between'>  
+
+{
+
+}
+
+
+
     {
 jobs.map(job => <Category
     key={job.id}

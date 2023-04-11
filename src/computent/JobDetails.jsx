@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import bgImg from '../assets/images/Vector-1.png'
 import bgImg2 from '../assets/images/Vector.png'
-import { addToDb, deleteShoppingCart, getShoppingCart } from '../fakeDb';
+import { addToDb } from '../utility/fakeDb';
+
 
 
 
@@ -13,6 +14,10 @@ const JobDetails = () => {
 const allJobs = useLoaderData([])
 
 
+const handleAddToCard = id =>{
+  console.log(id);
+  addToDb(id)
+}
 
 const [singlejob, setSinglejob]  = useState([])
 
@@ -64,7 +69,7 @@ const [singlejob, setSinglejob]  = useState([])
               <span> <img src={icon_salary} alt="" /></span>
                 <p> <span  className=' font-semibold'>Address:</span>{address}</p>
             </div>
-            <button onClick={()=> addToDb(id)} className='  w-full text-white bg-sky-500 rounded-md p-2 text-center  mt-8'>Apply Now</button>
+            <button onClick={()=> handleAddToCard(id)} className='  w-full text-white bg-sky-500 rounded-md p-2 text-center  mt-8'>Apply Now</button>
           </div>
          
         </div>

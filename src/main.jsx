@@ -13,6 +13,7 @@ import Statistics from './computent/Statistics';
 
 import Homes from './computent/Homes';
 import JobDetails from './computent/JobDetails';
+import AppliedJobs from './computent/AppliedJobs';
 
 
 
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
     {
       path: '/Blog',
       element: <Blog />
+    },
+
+    {
+   path:'/appliedJobs',
+   element: <AppliedJobs />,
+   loader:()=>fetch('/jobFeatured.json')
     },
     {
       path: '/job/:jobId',
