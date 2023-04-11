@@ -32,7 +32,7 @@
         "experience": " 2-3 Years in this field.",
         "phone": "04567823458 ",
         "email": "werdfe@gmail.com ",
-        "logo": "../src/assets/Logo/netflix-4 1.png",
+        "logo": "./logo/netflix-4 1.png",
         "icon_location": "../src/assets/Icons/Frame.png",
         "icon_salary": "../src/assets/Icons/Frame-4.png" 
        
@@ -71,7 +71,7 @@
         "phone": "04567823458 ",
         "email": "werdfe@gmail.com ",
         "logo": "../src/assets/Logo/google-1-1 1.png",
-        "icon_location": "../src/assets/Icons/Frame.png",
+        "icon_location": "./Frame-4.png",
         "icon_salary": "../src/assets/Icons/Frame-4.png"
        
     },
