@@ -4,11 +4,11 @@ const Category = ({job}) => {
     const {img, category, number_job} = job
     
     return (
-        <div className=' text-left bg-gray-200 p-6'>
+        <div className='  bg-slate-50 p-6  my-16 text-center '>
            
-            <img className='bg-gray-300 p-6' src={img} alt="" />
-            <h2>{category}</h2>
-            <p>{number_job}</p>
+            <img className=' bg-stone-100 p-2 text-center inline' src={img} alt="" />
+            <h2 className='pt-4'>{category}</h2>
+            <p className=' text-gray-500'>{number_job}</p>
         </div>
     );
 };

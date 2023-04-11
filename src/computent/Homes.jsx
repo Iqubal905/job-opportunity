@@ -8,20 +8,6 @@ const Homes = () => {
 
      const features = useLoaderData([])
 
-
-
-//  const [features, setFeature] = useState([])
- 
-// // useEffect(()=>{
-
-// //     fetch('jobFeatured.json')
-// //  .then(res => res.json())
-// //  .then(data => setFeature(data))
-// //   console.log(features);
-// // },[])
-
-
-
     const[jobs, setJobs] = useState([])
 
     useEffect(()=>{
@@ -50,10 +36,10 @@ const handlerShowAll = () =>{
    <div>
   <div className='m-6 p-6' >
   <h2 className=' text-3xl font-bold'>Job Category List</h2>
-            <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            <p className=' py-4 text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
-    <div className='flex justify-between'>  
+    <div className='md:flex justify-between md:px-28'>  
 
 {
 
@@ -72,9 +58,9 @@ jobs.map(job => <Category
 
 <div className='p-4 mb-4 mt-16'>
     <h2 className=' text-3xl font-bold'>Featured Jobs</h2>
-    <p className='p-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+    <p className='p-4 text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 </div>
-    <div className=' grid grid-cols-2 gap-16'>    
+    <div className=' grid md:grid-cols-2 gap-16 md:px-24'>    
 
     {Array.isArray(slice) ?
      slice.map(feature => <Featured
@@ -86,7 +72,7 @@ jobs.map(job => <Category
     </div>
 
    </div>
-   <button onClick={()=>handlerShowAll()} className=' text-white bg-sky-500 rounded-md p-2  my-6'>See all Jobs</button>
+   <button onClick={()=>handlerShowAll()} className=' text-white bg-sky-500 rounded-md p-2   my-12'>See all Jobs</button>
           
         </div>
     );

@@ -7,7 +7,7 @@ const Featured = ({feature}) => {
   
     
     return (
-        <div className=' text-left box-content  pb-4 pl-8 pr-4 pt-4 border-2 '>
+        <div className=' text-left box-content  pb-4 pl-8 pr-4 pt-4  border-2 '>
             <img className='p-2' src={logo} alt="" />
             <h2 className=' font-bold  text-2xl py-2'>{title}</h2>
             <p className=' text-sm  text-gray-500'>{companyName}</p>

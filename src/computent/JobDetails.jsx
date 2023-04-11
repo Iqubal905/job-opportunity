@@ -31,13 +31,13 @@ const [singlejob, setSinglejob]  = useState([])
 
     return (
         <div>
-           <div className='   pt-6 flex justify-between bg-slate-100 relative mb-8' >
+           <div className='   pt-6 flex justify-between bg-slate-50 relative mb-8' >
            <img className=' w-2/12  h-32' src={bgImg2} alt="" />
            <h2 className=' text-3xl font-bold pt-8 absolute top-0 right-0 left-0 bottom-0'>Job Details</h2>
            <img className=' w-2/12  h-32 absolute     bottom-28 right-0' src={bgImg} alt="" />
            </div>
            
-        <div className='grid grid-cols-3   mx-28 my-6'>
+        <div className='grid md:grid-cols-3   md:mx-28  my-6'>
             <div className=' col-span-2 text-left'>
             <p className='p-1 text-gray-500'><span className='text-black text-2xl font-semibold'>Job Description:</span>{description}</p>
             <p className='p-1 text-gray-500'><span className='text-black text-2xl font-semibold'>Job Responsibility:</span>{responsibility}</p>
@@ -46,7 +46,7 @@ const [singlejob, setSinglejob]  = useState([])
             </div>
 
 
-          <div className='   text-left  m-auto  bg-slate-100 p-4  rounded-lg'>
+          <div className='   text-left py-6 md:py-12 md:m-auto  bg-slate-100  p-4  rounded-lg'>
             <h2 className=' text-xl font-semibold py-4'>Job Details</h2>
             <div className='flex'>
               <span> <img src={icon_salary} alt="" /></span>
