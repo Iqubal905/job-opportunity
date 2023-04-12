@@ -6,7 +6,7 @@ const SaveJobs = ({singleStore}) => {
   
     
     return (
-        <div className=' md:flex align-middle  justify-between text-left box-content  pb-4 pl-8 pr-4 pt-4 border-2  m-6'>
+        <div className=' md:flex align-middle   justify-between text-left box-content  pb-4 pl-8 pr-4 pt-4 border-2  m-6'>
            <div className='flex align-middle  justify-center bg-slate-100 p-4  '>
            <img className=' h-8 m-auto' src={logo} alt="" />
            </div>

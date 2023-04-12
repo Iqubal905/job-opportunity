@@ -35,8 +35,15 @@ console.log(storeJob);
            <h2 className=' text-3xl font-bold pt-8 absolute top-0 right-0 left-0 bottom-0'>Applied Jobs</h2>
            <img className=' w-2/12  h-32 absolute     bottom-28 right-0' src={bgImg} alt="" />
            </div>
-            {storeJob.length ? 'Review applied jobs' : 'Please apply jobs empty!'}
+            {/* {storeJob.length ? 'Review applied jobs' : 'Please apply jobs empty!'} */}
          <div className='md:px-28'>
+
+         <div className=" flex justify-end  me-5">
+  <button className=" bg-slate-100 p-2  rounded-lg me-2">Fulltime</button>
+  <button className=" bg-slate-100 p-2  rounded-lg">Part-Time</button>
+</div>
+
+            
          {
             storeJob.map(singleStore => <SaveJobs
                 key={singleStore.id}
