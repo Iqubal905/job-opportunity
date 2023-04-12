@@ -1,20 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import bgImg from '../assets/images/Vector-1.png'
 import bgImg2 from '../assets/images/Vector.png'
-import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { curveCardinal } from 'd3-shape';
+
 const Statistics = () => {
-    const data01 = [
-        { name: 'Assignment-1', value: 50 },
-        { name: 'Assignment-2', value: 59 },
-        { name: 'Assignment-3', value: 57 },
-        { name: 'Assignment-4', value: 60 },
-        { name: 'Assignment-5', value: 53 },
-        { name: 'Assignment-6', value: 60 },
-        { name: 'Assignment-7', value: 60 },
-        { name: 'Assignment-8', value: 60 },
-      ];
+   
       
       
+    
+
+
+const[marks, setMarks] = useState([])
+
+useEffect(()=>{
+
+fetch('assignmentMarks.json')
+.then(res => res.json())
+.then(data =>setMarks(data))
+
+},[])
+
+
+
+
+
+
+
+
+const cardinal = curveCardinal.tension(0.2);
+
+
     return (
         <div>
 
@@ -26,19 +42,23 @@ const Statistics = () => {
 
         <div className='flex justify-center'>
            
-           <PieChart width={400} height={400}>
-            <Pie
-            dataKey="value"
-            isAnimationActive={false}
-            data={data01}
-            cx="50%"
-            cy="50%"
-            outerRadius={80}
-            fill="#8884d8"
-            label
-          />
+        <AreaChart
+          width={500}
+          height={400}
+          data={marks}
+          margin={{
+            top: 10,
+            right: 30,
+            left: 0,
+            bottom: 0,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
           <Tooltip />
-           </PieChart>
+          <Area type="monotone" dataKey="value" stroke="#8884d8" fill="#8884d8" fillOpacity={0.3} />
+        </AreaChart>
 
         </div>
         </div>
