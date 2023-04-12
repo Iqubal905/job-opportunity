@@ -23,8 +23,6 @@ useEffect(()=>{
 },[])
 
 
-console.log(storeJob);
-
 
     return (
         

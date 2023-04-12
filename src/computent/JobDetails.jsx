@@ -33,7 +33,7 @@ const [singlejob, setSinglejob]  = useState([])
  },[])
  const {id, title, address,salary,description, responsibility, education, experience, icon_phone, icon_email, time, logo, location, phone, email, icon_location, icon_salary} = singlejob
  
- console.log(singlejob);
+
 
     return (
         <div>
